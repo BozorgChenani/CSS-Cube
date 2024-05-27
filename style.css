@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+.cube {
+    perspective: 1000px;
+}
+.myCube {
+    width:2em;
+    font-size:3em;
+    margin:1.5em auto;
+    transform:rotateX(20deg) rotateY(20deg);
+    transform-style:preserve-3d;
+}
+.side {
+    width:2em;
+    height: 2em;
+    line-height:1.5em;
+    position:absolute;
+    border:2px solid white;
+    background-color: orange;
+}
+.top {
+    transform:rotateX(-90deg) translateZ(1em);
+}
+.bottom {
+    transform: rotateX(90deg) translateZ(1em);
+}
+.right {
+    transform:rotateY(90deg) translateZ(1em);
+}
+.left {
+    transform:rotateY(-90deg) translateZ(1em);;
+}
+.back {
+    transform:rotateY(-180deg) translateZ(1em);
+}
+.front {
+    transform:translateZ(1em);
+}
